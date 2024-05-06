@@ -6,12 +6,12 @@ import Projects from "./container/Projects";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="">
       <HeroPage />
       <Skills />
       <Projects />
       <About />
-    </>
+    </div>
   );
 };
 

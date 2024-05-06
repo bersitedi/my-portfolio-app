@@ -25,11 +25,9 @@ const HeroPage = () => {
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
         />
         <div className="max-w-screen-xl mx-auto px-4 py-8 relative z-20">
-          <div className="flex flex-col md:flex-row items-center mt-10">
+          <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 md:pl-8 text-white">
-              <h1 className="text-4xl lg:text-5xl font-bold mb-3">
-                {text} {/* Render the typewriter text here */}
-              </h1>
+              <h1 className="text-4xl lg:text-5xl font-bold mb-3">{text}</h1>
               <p className="text-lg mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               </p>
