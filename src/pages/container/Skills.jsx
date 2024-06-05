@@ -54,7 +54,7 @@ const Skills = () => {
 
   return (
     <div className="bg-black h-full flex justify-center items-center">
-      <div className="max-w-screen-xl px-[50px] py-10">
+      <div className="w-full px-6 md:px-[50px] py-10">
         <h1 className="text-gray-200 font-bold text-2xl text-start mb-5">
           My Skills
         </h1>
@@ -62,7 +62,7 @@ const Skills = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <div key={index} className="text-center">
-              <h2 className="font-bold text-orange-600 mb-5 text-xl">
+              <h2 className="font-bold text-orange-600 mb-5 bg-gray-900 bg-opacity-50 border border-gray-800 shadow-lg shadow-gray-800 rounded-lg text-xl">
                 {skill.category}
               </h2>
               <p className="text-gray-400 text-left mb-4">

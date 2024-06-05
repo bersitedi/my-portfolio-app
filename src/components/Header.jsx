@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/logo.svg";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
@@ -12,9 +13,9 @@ const Header = () => {
   };
 
   const navItems = [
-    { name: "About", href: "/about" },
-    { name: "Skills", href: "/skills" },
-    { name: "Projects", href: "/portfolio" },
+    { name: "About", href: "about" },
+    { name: "Skills", href: "skills" },
+    { name: "Projects", href: "projects" },
   ];
 
   return (
@@ -25,24 +26,27 @@ const Header = () => {
         </div>
         <div className="hidden md:flex items-center lg:space-x-10">
           {navItems.map((item, index) => (
-            <Link
+            <ScrollLink
               key={index}
               to={item.href}
-              className={`py-2 px-3 rounded text-lg font-bold hover:text-white hover:bg-gray-50 hover:bg-opacity-30 ${
-                location.pathname === item.href
-                  ? "text-orange-400"
-                  : "text-gray-100"
-              }`}
+              smooth={true}
+              duration={500}
+              className="cursor-pointer py-2 px-3 rounded text-lg font-bold text-gray-100 hover:text-white hover:bg-gray-50 hover:bg-opacity-30"
             >
               {item.name}
-            </Link>
+            </ScrollLink>
           ))}
         </div>
         <div className="flex items-center">
           <div className="hidden md:flex flex-col items-end justify-end">
-            <Link className="text-white border-2 border-gray-200 py-2 px-4 hover:text-white hover:bg-gray-50 hover:bg-opacity-20 hover:border-gray-50 hover:border-1 shadow-sm shadow-gray-300">
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer text-white border-2 border-gray-200 py-2 px-4 hover:text-white hover:bg-gray-50 hover:bg-opacity-20 hover:border-gray-50 hover:border-1 shadow-sm shadow-gray-300"
+            >
               Let's Connect
-            </Link>
+            </ScrollLink>
           </div>
           <div className="md:hidden text-white border-2 border-white p-1 rounded-md">
             {navIsVisible ? (
@@ -60,24 +64,20 @@ const Header = () => {
         </div>
       </div>
       <div
-        className={`${navIsVisible ? "block" : "hidden"} md:hidden bg-content p-4`}
+        className={`${navIsVisible ? "block" : "hidden"} md:hidden bg-black p-4`}
       >
         {navItems.map((item, index) => (
-          <Link
+          <ScrollLink
             key={index}
             to={item.href}
-            className={`block py-2 px-3 rounded text-lg font-bold ${
-              location.pathname === item.href
-                ? "text-blue-500"
-                : "text-gray-900"
-            }`}
+            smooth={true}
+            duration={500}
+            className="cursor-pointer block py-2 px-3 rounded text-lg font-bold text-gray-300"
+            onClick={navVisibilityHandler}
           >
             {item.name}
-          </Link>
+          </ScrollLink>
         ))}
-        <Link className="block text-gray-900 py-2 px-3 rounded text-lg font-bold">
-          Let's Connect
-        </Link>
       </div>
     </nav>
   );
