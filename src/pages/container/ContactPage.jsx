@@ -48,7 +48,7 @@ const ContactPage = () => {
   return (
     <div className="bg-black h-full flex justify-center items-center">
       <div className="w-full px-6 md:px-[50px] py-10 text-white">
-        <h1 className="text-gray-200 font-bold text-2xl text-start mb-5">
+        <h1 className="text-gray-200 font-bold text-xl md:text-2xl text-start mb-5">
           Contact Me
         </h1>
         <hr className="mb-5 md:mb-10" />
@@ -58,21 +58,18 @@ const ContactPage = () => {
           </div>
           <div className="hidden md:flex border border-gray-500 h-[500px]"></div>
           <div className="w-full md:w-1/2 md:mt-10 flex flex-col justify-center  md:justify-start">
-            <div className="grid grid-cols-2 gap-4 text-gray-300 mb-5">
+            <div className="grid grid-cols-2 gap-4 text-gray-300 mb-8">
               <div className="flex items-center">
                 <FaPhoneAlt className="mr-2 text-2xl text-buttons" />
-                <p className="font-bold text-sm"> Phone: +251 116 675 115</p>
-              </div>
-              <div className="flex items-center">
-                <FaEnvelope className="mr-2 text-xl text-buttons" />
-                <p className="font-bold text-sm">
-                  Email: springconae@gmail.com
+                <p className="font-bold text-sm md:text-xl">
+                  {" "}
+                  Phone: +48 797 390 029
                 </p>
               </div>
               <div className="flex items-center">
-                <FaMapMarkerAlt className="mr-2 text-xl text-buttons" />
-                <p className="font-bold text-sm">
-                  Mercy plaza, 10th floor office No 003
+                <FaEnvelope className="mr-2 text-xl text-buttons" />
+                <p className="font-bold text-sm md:text-xl">
+                  Email: bersitedi421@gmail.com
                 </p>
               </div>
             </div>

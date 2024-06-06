@@ -31,7 +31,7 @@ const Header = () => {
               to={item.href}
               smooth={true}
               duration={500}
-              className="cursor-pointer py-2 px-3 rounded text-lg font-bold text-gray-100 hover:text-white hover:bg-gray-50 hover:bg-opacity-30"
+              className="cursor-pointer py-2 px-3  text-lg font-bold text-gray-100 hover:text-orange-600 hover:bg-gray-900 hover:bg-opacity-50 hover:border hover:border-gray-800 hover:shadow-lg hover:shadow-gray-800  rounded-lg"
             >
               {item.name}
             </ScrollLink>

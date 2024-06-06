@@ -9,7 +9,7 @@ const About = () => {
       id="about"
     >
       <div className="w-full px-6 md:px-[50px] py-10">
-        <h1 className="text-gray-200 font-bold text-2xl text-start mb-5">
+        <h1 className="text-gray-200 font-bold text-xl md:text-2xl text-start mb-5">
           About Me
         </h1>
         <hr className="mb-10" />
@@ -26,7 +26,7 @@ const About = () => {
                 <h1 className="text-gray-300 font-bold text-xl">
                   Hi, my name is Bersi
                 </h1>
-                <p className="text-gray-400 leading-6 text-sm mt-3">
+                <p className="text-gray-400 leading-6 text-base mt-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   ut libero et ex vehicula bibendum. Aliquam erat volutpat.
                   Fusce eget gravida elit. Nulla eu justo vestibulum, convallis
