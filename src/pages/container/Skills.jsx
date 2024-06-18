@@ -65,7 +65,7 @@ const Skills = () => {
               <h2 className="font-bold text-orange-600 mb-5 bg-gray-900 bg-opacity-50 border border-gray-800 shadow-lg shadow-gray-800 rounded-lg text-xl">
                 {skill.category}
               </h2>
-              <p className="text-gray-400 text-base text-left mb-4">
+              <p className="text-gray-300 text-base text-left mb-4">
                 {skill.description}
               </p>
               <div className="flex flex-wrap justify-start">
@@ -73,7 +73,7 @@ const Skills = () => {
                   {skill.list.map((item, index) => (
                     <div key={index} className="flex items-center mb-2">
                       <RiArrowRightSLine className="text-orange-600 mr-2" />
-                      <p className="text-base text-gray-400">{item.name}</p>
+                      <p className="text-base text-gray-300">{item.name}</p>
                     </div>
                   ))}
                 </div>

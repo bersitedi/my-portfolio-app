@@ -7,6 +7,7 @@ import backgroundImage from "../../assets/newback.jpg";
 import Header from "../../components/Header";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import cvPDF from "../../assets/CV.pdf";
 
 const HeroPage = () => {
   const phoneAnimation = useRef();
@@ -32,15 +33,17 @@ const HeroPage = () => {
                 {text}
               </h1>
               <p className="text-base md:text-xl mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                Aspiring Frontend Developer passionate about creating intuitive
+                and dynamic user experiences.
               </p>
               <div className="flex gap-3">
-                <Link
-                  to="projects"
+                <a
+                  href={cvPDF}
+                  download="CV.pdf"
                   className="px-6 py-3 text-white border-2 hover:bg-gray-50 hover:bg-opacity-20"
                 >
-                  Let's Connect
-                </Link>
+                  Download CV
+                </a>
                 <ScrollLink
                   smooth={true}
                   duration={500}

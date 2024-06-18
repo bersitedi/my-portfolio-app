@@ -26,17 +26,19 @@ const About = () => {
                 <h1 className="text-gray-300 font-bold text-xl">
                   Hi, my name is Bersi
                 </h1>
-                <p className="text-gray-400 leading-6 text-base mt-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  ut libero et ex vehicula bibendum. Aliquam erat volutpat.
-                  Fusce eget gravida elit. Nulla eu justo vestibulum, convallis
-                  urna at, lacinia odio. Curabitur consectetur libero at justo
-                  gravida, nec faucibus diam aliquet. Phasellus euismod lorem eu
-                  odio gravida, sit amet dapibus mi condimentum. Vestibulum eget
-                  condimentum velit. Duis tristique, elit et aliquet tristique,
-                  ipsum dui tempor dolor, eget dictum odio arcu at sem. Nulla
-                  facilisi. In ultricies ligula id leo ullamcorper, a aliquet
-                  eros tristique.
+
+                <p className="text-gray-300 leading-6 text-base mt-3">
+                  I am a dedicated frontend developer with a background in
+                  Computer Science. I honed my skills through various online
+                  courses and practical projects, constantly striving to stay
+                  up-to-date with the latest technologies and trends in web
+                  development. My expertise includes HTML, CSS, JavaScript, and
+                  the MERN stack, allowing me to create dynamic and responsive
+                  web applications. When I'm not coding, I enjoy exploring new
+                  design techniques, participating in coding challenges, and
+                  contributing to open-source projects. I am passionate about
+                  creating intuitive user experiences and continuously learning
+                  to enhance my skill set.
                 </p>
               </div>
             </div>
