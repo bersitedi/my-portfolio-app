@@ -4,7 +4,7 @@ import { toast } from "react-hot-toast";
 import Lottie from "lottie-react";
 import animationData from "../../assets/Animation - 1717616963855.json";
 import { useRef } from "react";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const ContactPage = () => {
   const [name, setName] = useState("");
@@ -51,25 +51,52 @@ const ContactPage = () => {
         <h1 className="text-gray-200 font-bold text-xl md:text-2xl text-start mb-5">
           Contact Me
         </h1>
-        <hr className="mb-5 md:mb-10" />
+        <hr className="mb-10 border-b border-gray-600" />
         <div className="flex flex-col justify-between md:flex-row">
           <div className="w-full md:w-1/3 mb-5 md:mb-0">
             <Lottie lottieRef={phoneAnimation} animationData={animationData} />
           </div>
-          <div className="hidden md:flex border border-gray-500 h-[500px]"></div>
           <div className="w-full md:w-1/2 md:mt-10 flex flex-col justify-center  md:justify-start">
             <div className="grid grid-cols-2 gap-4 text-gray-300 mb-8">
               <div className="flex items-center">
-                <FaPhoneAlt className="mr-2 text-2xl text-buttons" />
+                <FaPhoneAlt className="mr-2 text-blue-500 text-2xl text-buttons" />
+                <p className="font-bold text-sm md:text-xl">+48 797 390 029</p>
+              </div>
+              <div className="flex items-center">
+                <FaEnvelope className="mr-2 text-xl text-blue-500  text-buttons" />
                 <p className="font-bold text-sm md:text-xl">
-                  {" "}
-                  Phone: +48 797 390 029
+                  <a
+                    href="mailto:bersitedi421@gmail.com"
+                    className="text-buttons hover:underline"
+                  >
+                    bersitedi421@gmail.com
+                  </a>
                 </p>
               </div>
               <div className="flex items-center">
-                <FaEnvelope className="mr-2 text-xl text-buttons" />
+                <FaLinkedin className="mr-2 text-2xl text-blue-500 text-buttons" />
                 <p className="font-bold text-sm md:text-xl">
-                  Email: bersitedi421@gmail.com
+                  <a
+                    href="https://www.linkedin.com/in/bersabeh-tsegaye-aa3b28236/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-buttons hover:underline"
+                  >
+                    LinkedIn
+                  </a>
+                </p>
+              </div>
+              <div className="flex items-center">
+                <FaGithub className="mr-2 text-blue-500 text-2xl text-buttons" />
+                <p className="font-bold  text-sm md:text-xl">
+                  <a
+                    href="https://github.com/bersitedi?tab=repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-buttons hover:underline"
+                  >
+                    GitHub
+                  </a>
                 </p>
               </div>
             </div>

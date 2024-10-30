@@ -5,6 +5,7 @@ import About from "./container/About";
 import Skills from "./container/Skills";
 import Projects from "./container/Projects";
 import ContactPage from "./container/ContactPage";
+import Certification from "./container/Certification";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,9 @@ const HomePage = () => {
       </Element>
       <Element name="projects">
         <Projects />
+      </Element>
+      <Element name="certificate">
+        <Certification />
       </Element>
       <Element name="contact">
         <ContactPage />

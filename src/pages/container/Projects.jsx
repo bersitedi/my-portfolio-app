@@ -105,53 +105,59 @@ const Projects = () => {
     return (
       <div className="space-y-8">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="flex flex-col md:flex-row items-center justify-start"
-          >
-            <div className="w-full md:w-1/3">
-              <div className="flex items-start justify-start">
-                <img src={project.image} alt="" className="w-full rounded-lg" />
+          <div key={index} className="flex flex-col">
+            <div className="flex flex-col md:flex-row items-center justify-start">
+              <div className="w-full mb-3 md:mb-0 md:w-1/2 lg:w-1/3">
+                <div className="flex items-start justify-start">
+                  <img
+                    src={project.image}
+                    alt=""
+                    className="w-full rounded-lg"
+                  />
+                </div>
               </div>
-            </div>
-            <div className="w-full md:w-1/2">
-              <div className="flex flex-col py-3 md:py-0 md:p-5">
-                <h1 className="text-white font-bold text-xl">
-                  {project.title}
-                </h1>
-                <p className="text-gray-300 text-base mt-3">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  {project.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="bg-gray-700 text-white px-2 py-1 rounded-full text-sm"
+              <div className="w-full md:w-1/2">
+                <div className="flex flex-col py-3 md:py-0 md:p-5">
+                  <h1 className="text-white font-bold text-xl">
+                    {project.title}
+                  </h1>
+                  <p className="text-gray-300 text-base mt-3">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {project.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className="bg-gray-700 text-white px-2 py-1 rounded-full text-sm"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="flex space-x-4 mt-3">
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 underline"
                     >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex space-x-4 mt-3">
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 underline"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    href={project.websiteLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 underline"
-                  >
-                    Live Website
-                  </a>
+                      GitHub
+                    </a>
+                    <a
+                      href={project.websiteLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 underline"
+                    >
+                      Live Website
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
+            {index !== projects.length - 1 && (
+              <hr className="mb-7 mt-7 border-t border-gray-800" />
+            )}
           </div>
         ))}
       </div>
@@ -159,13 +165,13 @@ const Projects = () => {
   };
 
   return (
-    <div className="bg-black h-full flex justify-center items-center">
+    <div className="bg-black h-full flex justify-center items-center md:pb-10">
       <div className="w-full px-6 md:px-[50px] py-10">
         <h1 className="text-gray-200 font-bold text-xl md:text-2xl text-start mb-5">
           My Projects
         </h1>
-        <hr className="mb-7" />
-        <div className="flex justify-center space-x-8 mb-10">
+        <hr className="mb-10 border-b border-gray-600" />
+        <div className="flex justify-center space-x-8 mb-10 md:mb-[55px]">
           <div
             className={`cursor-pointer bg-gray-900 bg-opacity-50 border border-gray-800 shadow-xl shadow-gray-800 rounded-lg px-4 text-xl ${
               selectedCategory === "Main Projects"
