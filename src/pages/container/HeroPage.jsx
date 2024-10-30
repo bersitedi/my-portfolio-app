@@ -12,7 +12,7 @@ import cvPDF from "../../assets/CV.pdf";
 const HeroPage = () => {
   const phoneAnimation = useRef();
   const [text] = useTypewriter({
-    words: ["Frontend Web developer based in Warsaw"],
+    words: ["Web developer based in Warsaw"],
     typeSpeed: 100,
     deleteSpeed: 80,
   });
