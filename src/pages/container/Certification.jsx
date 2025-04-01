@@ -24,9 +24,8 @@ const Certification = () => {
                   <h1 className="text-gray-300 font-bold text-xl">
                     Certifications & Educational background
                   </h1>
-
                   <p className="text-gray-300 leading-6 text-base mt-3">
-                    I am a first-year Computer Science student at WSB Merito
+                    I am a second-year Computer Science student at WSB Merito
                     University in Warsaw. My passion for coding began when I
                     attended a bootcamp called SheCodes, which is dedicated to
                     teaching women how to code. During this bootcamp, I
@@ -42,27 +41,15 @@ const Certification = () => {
             <hr className="hidden md:flex border-r border-gray-800 h-[200px]" />
             <div className="w-full lg:w-1/2 mt-5 lg:pl-5">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                <Zoom>
-                  <img
-                    src={basic}
-                    alt="Image 1"
-                    className="w-full h-auto rounded-lg cursor-pointer"
-                  />
-                </Zoom>
-                <Zoom>
-                  <img
-                    src={plus}
-                    alt="Image 2"
-                    className="w-full h-auto rounded-lg cursor-pointer"
-                  />
-                </Zoom>
-                <Zoom>
-                  <img
-                    src={responsive}
-                    alt="Image 3"
-                    className="w-full h-auto rounded-lg cursor-pointer"
-                  />
-                </Zoom>
+                {[basic, plus, responsive].map((image, index) => (
+                  <Zoom key={index}>
+                    <img
+                      src={image}
+                      alt={`Certification ${index + 1}`}
+                      className="w-full h-auto rounded-lg cursor-pointer transition-transform duration-300 hover:scale-110"
+                    />
+                  </Zoom>
+                ))}
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import three from "../../assets/profile.jpeg";
+import three from "../../assets/profile.jpg";
 import { FaGithub, FaFacebook, FaEnvelope } from "react-icons/fa";
 
 const About = () => {
@@ -26,7 +26,7 @@ const About = () => {
                   Hi, my name is Bersi
                 </h1>
                 <p className="text-gray-300 leading-6 text-base mt-3">
-                  I am a dedicated frontend developer with a background in
+                  I am a dedicated Web developer with a background in
                   Computer Science. I honed my skills through various online
                   courses and practical projects, constantly striving to stay
                   up-to-date with the latest technologies and trends in web

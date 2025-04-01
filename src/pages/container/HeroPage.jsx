@@ -33,7 +33,7 @@ const HeroPage = () => {
                 {text}
               </h1>
               <p className="text-base md:text-xl mb-4">
-                Aspiring Frontend Developer passionate about creating intuitive
+                Aspiring Web Developer passionate about creating intuitive
                 and dynamic user experiences.
               </p>
               <div className="flex gap-3">

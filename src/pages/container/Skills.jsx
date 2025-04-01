@@ -6,8 +6,10 @@ import nodeimg from "../../assets/nodejs.svg";
 import mongoimg from "../../assets/mongodb.svg";
 import jsimg from "../../assets/js.svg";
 import gitimg from "../../assets/github.svg";
-import devimg from "../../assets/developertools.gif";
+import python from "../../assets/python.svg";
+import devimg from "../../assets/devtools.svg";
 import tailimg from "../../assets/tailwind.svg";
+import sqlImg from "../../assets/db.svg";
 import responsiveimg from "../../assets/responsive.svg";
 import { RiArrowRightSLine } from "react-icons/ri";
 
@@ -24,6 +26,8 @@ const Skills = () => {
   const backendSkills = [
     { name: "Node.js", image: nodeimg },
     { name: "MongoDB", image: mongoimg },
+    { name: "Python", image: python },
+    { name: "SQL", image: sqlImg }
   ];
 
   const otherSkills = [
@@ -41,7 +45,7 @@ const Skills = () => {
     {
       category: "Backend Development",
       description:
-        "I have expertise in server-side development using Node.js and database management with MongoDB. I'm familiar with building RESTful APIs, handling authentication, and implementing data persistence.",
+        "I have expertise in server-side development using Node.js, basic understanding of python and c++ and database management with MongoDB and SQL. I'm familiar with building RESTful APIs, handling authentication, and implementing data persistence.",
       list: backendSkills,
     },
     {
